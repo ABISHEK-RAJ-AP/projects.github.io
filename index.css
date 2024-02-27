@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lumanosimo', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 65px;
+    animation: header ease-in 1s;
+}
+
+@keyframes header {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+.header-ico {
+    display: none;
+    position: relative;
+    left: -238px;
+    top: 22px;
+}
+
+.header-title {
+    margin-top: 12px;
+    margin-left: 22px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-left: 722px;
+    margin-right: 20px;
+    margin-top: 21px;
+}
+
+.navigation-list {
+    text-decoration: none;
+    color: white;
+
+    font-weight: 600;
+}
+
+.main {
+    color: white;
+    margin-left: 53px;
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+    animation-name: main;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes main {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.main-heading {
+    margin-top: 159px;
+    font-weight: bolder;
+}
+
+.main-para {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.main-button {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(174, 31, 31);
+    position: relative;
+    top: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+}
+
+.car-img {
+    width: 50%;
+    position: relative;
+    padding: 38px;
+    top: 39px;
+    animation-name: car;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+
+}
+
+@keyframes car {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+@media Screen and (min-width:320px) and (max-width:480px) {
+    .header {
+        display: flex;
+        color: white;
+        background-color: black;
+        height: 65px;
+        animation: header ease-in 1s;
+        overflow: hidden;
+    }
+
+    @keyframes header {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+
+    }
+
+    .header-ico {
+        display: block;
+        position: relative;
+        left: 156px;
+        top: 23px;
+    }
+
+    .header-title {
+        margin-top: 12px;
+        margin-left: 22px;
+    }
+
+    .navigation {
+        display: none;
+        list-style: none;
+        margin-left: 722px;
+        margin-right: 20px;
+        margin-top: 21px;
+    }
+
+    .navigation-list {
+        text-decoration: none;
+        color: white;
+
+        font-weight: 600;
+    }
+
+    .main {
+        color: white;
+        width: 98%;
+        animation-name: main;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        margin-left: 5px;
+    }
+
+    @keyframes main {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+
+    }
+
+    .main-heading {
+        margin-top: 60px;
+        font-weight: bolder;
+    }
+
+    .main-para {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+
+    .main-button {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(147, 35, 35);
+        position: relative;
+        top: 17px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border-radius: 2px;
+        font-weight: 600;
+    }
+
+    .container {
+        display: inline-block;
+        overflow: hidden;
+        background-color: black;
+       
+    }
+
+    .car-img {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        top: 21px;
+        left: 0;  
+        animation-name: car;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+
+    }
+
+    @keyframes car {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+}
+/* General Body, Section, and Footer Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* About Section */
+  .about-section h2,
+  .services-section h2,
+  .contact-section h2 {
+    font-family: 'Lumanosimo', sans-serif;
+  }
+  
+  .about-section p,
+  .services-section .service-item p,
+  .contact-section p {
+    font-size: 1rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #b82323;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .service-item h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Contact Section */
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #c52020;
+    margin-right: 10px;
+  }
+  
+  .social-icon i {
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Design for Navigation and Header */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+  
+    .header-ico {
+      display: block;
+    }
+  }
+  
+  /* Add any specific colors, font-sizes, or other properties according to your design needs */
+  .footer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: center;
+    color: #fff; /* Set text color to white */
+    background-color: #000; /* Set background color to black */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    gap: 10px; /* Add space between icons */
+  }
+  
+  .social-icon {
+    color: red; /* Set the social icons color to red */
+  }
+  
+  /* Style for the text */
+  .footer-text {
+    margin-right: auto; /* Push the text to the left */
+    margin-left: auto; /* Push the text to the right */
+  }
+  .second-section {
+    color: #ffffff; /* Set text color to white */
+    background-color: #000000; /* Set background to black */
+    padding: 20px; /* Add some padding */
+  }
+  
+  /* If you have headings, paragraphs, or other elements inside the second section, you can target them specifically like this: */
+  
+  .second-section h2,
+  .second-section p {
+    color: #ffffff; /* Ensures text elements are white */
+  }
+    /* Services Section */
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    color: white; /* Set text color to white */
+  }
+  
+  .service-item {
+    background-color: black; /* Set background color to black */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .service-item h3 {
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Ensure headings are white */
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: row; /* Arrange items in a row */
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .social-icons {
+    display: flex; /* Align social icons in a row */
+    gap: 10px; /* Add space between icons */
+  }
+  
+  .social-icon i {
+    color: #fff; /* Set the social icons color to white */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  
+  /* You can add this rule if you want to remove the underline from the links in the footer */
+  .footer a {
+    text-decoration: none; /* Removes underline from links */
+  }
+  body, .navigation-list, .main-button, .footer, .service-item h3, .contact-info li {
+    color: white; /* This will set text color to white for these elements */
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+.footer {
+  display: flex;        /* Enable flexbox */
+  justify-content: space-between; /* Space out the child elements */
+  align-items: center;  /* Align items vertically */
+  padding: 10px;        /* Add some padding */
+}
+
+.footer .copyright {
+  flex: 1;              /* Allow this item to grow */
+  text-align: left;     /* Align the text to the left */
+}
+
+.footer .icons {
+  flex: 1;              /* Allow this item to grow */
+  text-align: center;   /* Align the icons in the center */
+}
+
+.footer .empty {
+  flex: 1;              /* Allow this item to grow */
+  visibility: hidden;   /* Make this item invisible */
+}
