@@ -19,7 +19,6 @@ Purrari is a homage to an Italian luxury sports car manufacturer, reimagined wit
 
 - HTML5
 - CSS3 with animations and media queries
-- JavaScript (if applicable)
 - FontAwesome for icons
 - Google Fonts for typography
 
