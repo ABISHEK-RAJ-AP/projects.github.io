@@ -35,6 +35,9 @@ Open the `index.html` file in your browser to view the project.
 ## Contributing
 
 We welcome contributions to the Purrari project,for details on how to submit pull requests, the process for submitting bugs, and other ways you can help.
+live demo
+
+[demo](https://abishekbalance.github.io/projects.github.io/)
 
 ## License
 
